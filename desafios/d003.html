@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 003</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        //Desafio sobre pedir ao usuário 2 números e apresentar na tela a soma entre os dois números que são MOEDAS (BRL - Real).
+        var n1 = Number(window.prompt('Escreva um número qualquer.'))
+        window.alert(`A variável "n1" recebeu o valor ${n1}`)
+        var n2 = Number(window.prompt(`Digite outro valor para ser somado com ${n1}.`))
+        window.alert(`A variável "n2" recebeu o valor ${n2}.`)
+        var soma = n1 + n2
+        window.alert('Soma realizada. Clique em "Ok" para ver o resultado.')
+        document.write(`O valor da soma entre ${n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})} e ${n2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} é ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+        var sal2024 = 1412
+        document.write(`<br><br>O valor do salário mínimo no ano de 2024 é de ${sal2024.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>

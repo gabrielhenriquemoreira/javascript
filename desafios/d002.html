@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 002</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        //Desafio sobre receber nome de usuário e escrever na tela formatações de seu nome (em MAIÚSCULAS e em minúsculas) além de mostrar quantos caracteres o nome do user tem.
+        var nome = window.prompt('Qual é seu nome?')
+        document.writeln(`Olá, <strong>${nome}</strong>!`)
+        document.write(`Seu nome possui ${nome.length} caracteres.<br>Além disso, seu nome em maiúsculas é "${nome.toUpperCase()}".<br>Por fim, com essa informação, consigo lhe dizer que seu nome em minúsculas é "${nome.toLowerCase()}".<br><br>`)
+        document.write(`Tenha um bom dia, ${nome}.`)
+
+    </script>
+</body>
+</html>
